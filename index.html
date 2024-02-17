@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Ticket</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS & Daisy UI -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="container mx-auto">
+    <header>
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-4xl text-[#030712]">Next Tour Tickets</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-[#030712B2] text-lg">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                  </ul>
+                </div>
+
+                <!-- Bus Icon  -->
+                <div class="navbar-end">
+                  <button class="btn bg-[#1DD1001A] border-2 border-[#1DD10066] rounded-xl">
+                    <p class="text-[#1DD100]">Bus</p>
+                    <img src="images/bus-icon.png" alt="">
+                  </button>
+                </div>
+              </div>
+        </nav>
+        <div id="banner" class="text-center mt-12 bg-no-repeat bg-cover">
+            <h1 class="pt-16 text-white text-6xl font-extrabold">Unlock Your Next Adventure with <br> <span class="text-[#1DD100]">Next Tour Tickets</span></h1>
+            <p class="pt-6 text-white text-lg max-w-2xl mx-auto">Next Tour Tickets is your gateway to exploring the world with ease and excitement. From historic landmarks and cultural excursions to thrilling adventures and serene retreats.</p>
+            <button class="btn bg-[#1DD100] text-[#030712] border-0 py-5 px-6 mb-28 mt-6">Buy Ticket</button>
+        </div>
+    </header>
+
+    <!-- Best offers -->
+    <section class="mt-28">
+        <h3 class="text-center text-[#030712] text-5xl font-bold">Best offers for you</h3>
+
+        <!-- Coupon Cards -->
+        <div class="flex justify-center gap-6">
+            <!-- Coupon Card 1 -->
+            <div class="bg-[#FFBF0F] p-12 rounded-3xl mt-12 max-w-xl flex gap-32">
+                <div class="">
+                    <p><span class="text-[#030712CC] text-4xl font-extrabold">15% OFF</span><br>
+                    <span class="text-xl font-semibold">on your next purchase</span><br>
+                    <span class="">use by January 2024</span></p>
+                </div>
+                <div>
+                    <p><span class="text-[#030712] text-3xl font-bold">NEW15</span> <br> <span class="text-[#03071266] font-medium">Coupon Code</span></p>
+                </div>
+            </div>
+            
+            <!-- Coupon Card 2 -->
+            <div class="bg-[#F78C9C] p-12 rounded-3xl mt-12 max-w-xl flex gap-24">
+                <div class="">
+                    <p><span class="text-[#030712CC] text-4xl font-extrabold">20% OFF</span><br>
+                    <span class="text-xl font-semibold">on your next purchase</span><br>
+                    <span class="">use by January 2024</span></p>
+                </div>
+                <div>
+                    <p><span class="text-[#030712] text-3xl font-bold">Couple 20</span> <br> <span class="text-[#03071266] font-medium">Coupon Code</span></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex justify-center">
+            <button class="btn mt-12 text-[#1DD100] bg-white rounded-xl border-[#1DD100] ">See All Offer</button>
+        </div>
+    </section>
+
+    <!-- Ticket Section -->
+    <section class="mt-28 bg-[#F7F8F8] pt-28 rounded-t-[88px] px-5">
+        <h3 class="text-center text-[#030712] text-5xl font-bold">Safety Paribahan</h3>
+        <p class="pt-6 text-[#03071299] text-center text-lg max-w-2xl mx-auto">Buy your next tour ticket from Safety Paribahan to reach your destination without any obstacle and effortlessly by the grace of Allah. </p>
+
+        <!-- Bus Selection -->
+        <div class="bg-white px-4 py-2 rounded-3xl mt-12 w-full flex ">
+            <div class="grow">
+                <div class="mt-16 flex justify-between max-w-4xl">
+                    <div class="flex gap-4 items-center">
+                        <div><img src="images/bus-logo.png" alt=""></div>
+                        <div>
+                            <h4 class="text-[#030712] text-2xl font-bold">Greenline Paribahan</h4>
+                            <p class="text-[#03071299]">Coach-009-WEB ! AC_Business</p>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn bg-[#1DD10026] text-[#1DD100] rounded-xl"><img src="images/seat-green.png" alt=""><span>40</span> seats left</button>
+                    </div>
+                </div>
+                <div class="max-w-4xl bg-[#F7F8F8] rounded-3xl">
+                    <div class="flex justify-between mt-5 rounded-2xl p-6">
+                        <p class="text-[#03071299]">Route</p>
+                        <p class="text-[#030712]">Dhaka - Sylhet</p>
+                    </div>
+                    
+                    <div class="border-b-2 border-dashed border-[#03071233] mx-4 h-full"></div>
+
+                    <div class="flex justify-between rounded-2xl p-6">
+                        <p class="text-[#03071299]">Departure Time</p>
+                        <p class="text-[#030712]">9:00 PM</p>
+                    </div>
+
+                    <div class="border-b-2 border-dashed border-[#03071233] mx-4 h-full"></div>
+
+                    <div class="px-5 pb-5 flex justify-between mt-4">
+                        <button class="btn bg-[#0307120D] rounded-xl ">Boarding Point - Laxmipur</button>
+                        <button class="btn bg-[#0307120D] rounded-xl">Dropping Point - Bogura</button>
+                        <button class="btn bg-[#0307120D] rounded-xl">Est. Time - 11 Hour</button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center flex flex-col justify-center items-center pr-20">
+                <div>
+                    <img src="images/fare.png" alt="">
+                </div>
+                <h4 class="text-[#030712] text-2xl font-bold">550 Taka</h4>
+                <p class="text-[#03071299] text-xl font-semibold">Per Seat</p>
+            </div>
+        </div>
+
+        <!-- Ticket Selection -->
+
+    </section>
+</body>
+</html>
