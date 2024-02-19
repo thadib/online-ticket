@@ -1,9 +1,0 @@
-#banner{
-    background-image: linear-gradient(180deg, rgba(3, 7, 18, 0.50) 0%, rgba(3, 7, 18, 0.00) 100%), url(images/banner.png);
-    max-height: 550px;
-} 
-
-#banner img{
-    height: 100%;
-}
-

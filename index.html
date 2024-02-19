@@ -15,8 +15,8 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="container mx-auto">
-    <header>
+<body class="">
+    <header class="container mx-auto">
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -59,7 +59,7 @@
     </header>
 
     <!-- Best offers -->
-    <section class="mt-28">
+    <section class="mt-28 container mx-auto">
         <h3 class="text-center text-[#030712] text-5xl font-bold">Best offers for you</h3>
 
         <!-- Coupon Cards -->
@@ -84,7 +84,7 @@
                     <span class="">use by January 2024</span></p>
                 </div>
                 <div>
-                    <p><span class="text-[#030712] text-3xl font-bold">Couple 20</span> <br> <span class="text-[#03071266] font-medium">Coupon Code</span></p>
+                    <p><span class="text-[#030712] text-3xl font-bold">Couple20</span> <br> <span class="text-[#03071266] font-medium">Coupon Code</span></p>
                 </div>
             </div>
         </div>
@@ -95,58 +95,162 @@
     </section>
 
     <!-- Ticket Section -->
-    <section class="mt-28 bg-[#F7F8F8] pt-28 rounded-t-[88px] px-5">
-        <h3 class="text-center text-[#030712] text-5xl font-bold">Safety Paribahan</h3>
-        <p class="pt-6 text-[#03071299] text-center text-lg max-w-2xl mx-auto">Buy your next tour ticket from Safety Paribahan to reach your destination without any obstacle and effortlessly by the grace of Allah. </p>
+    <section class="mt-28 bg-[#F7F8F8] pt-28 rounded-t-[88px] px-5 max-w-full border-t-2 border-t-[#1DD100]">
+        <div class="container mx-auto">
+            <h3 class="text-center text-[#030712] text-5xl font-bold">Safety Paribahan</h3>
+            <p class="pt-6 text-[#03071299] text-center text-lg max-w-2xl mx-auto">Buy your next tour ticket from Safety Paribahan to reach your destination without any obstacle and effortlessly by the grace of Allah. </p>
 
-        <!-- Bus Selection -->
-        <div class="bg-white px-4 py-2 rounded-3xl mt-12 w-full flex ">
-            <div class="grow">
-                <div class="mt-16 flex justify-between max-w-4xl">
-                    <div class="flex gap-4 items-center">
-                        <div><img src="images/bus-logo.png" alt=""></div>
+            <!-- Bus Selection -->
+            <div class="bg-white px-4 py-2 rounded-3xl mt-12 w-full flex ">
+                <div class="grow">
+                    <div class="mt-16 flex justify-between max-w-4xl">
+                        <div class="flex gap-4 items-center">
+                            <div><img src="images/bus-logo.png" alt=""></div>
+                            <div>
+                                <h4 class="text-[#030712] text-2xl font-bold">Greenline Paribahan</h4>
+                                <p class="text-[#03071299]">Coach-009-WEB ! AC_Business</p>
+                            </div>
+                        </div>
                         <div>
-                            <h4 class="text-[#030712] text-2xl font-bold">Greenline Paribahan</h4>
-                            <p class="text-[#03071299]">Coach-009-WEB ! AC_Business</p>
+                            <button class="btn bg-[#1DD10026] text-[#1DD100] rounded-xl"><img src="images/seat-green.png" alt=""><span id="available-seat">12</span> seats left</button>
                         </div>
                     </div>
-                    <div>
-                        <button class="btn bg-[#1DD10026] text-[#1DD100] rounded-xl"><img src="images/seat-green.png" alt=""><span>40</span> seats left</button>
+                    <div class="max-w-4xl bg-[#F7F8F8] rounded-3xl">
+                        <div class="flex justify-between mt-5 rounded-2xl p-6">
+                            <p class="text-[#03071299]">Route</p>
+                            <p class="text-[#030712]">Dhaka - Sylhet</p>
+                        </div>
+                        
+                        <div class="border-b-2 border-dashed border-[#03071233] mx-4 h-full"></div>
+
+                        <div class="flex justify-between rounded-2xl p-6">
+                            <p class="text-[#03071299]">Departure Time</p>
+                            <p class="text-[#030712]">9:00 PM</p>
+                        </div>
+
+                        <div class="border-b-2 border-dashed border-[#03071233] mx-4 h-full"></div>
+
+                        <div class="px-5 pb-5 flex justify-between mt-4">
+                            <button class="btn bg-[#0307120D] rounded-xl ">Boarding Point - Laxmipur</button>
+                            <button class="btn bg-[#0307120D] rounded-xl">Dropping Point - Bogura</button>
+                            <button class="btn bg-[#0307120D] rounded-xl">Est. Time - 11 Hour</button>
+                        </div>
                     </div>
                 </div>
-                <div class="max-w-4xl bg-[#F7F8F8] rounded-3xl">
-                    <div class="flex justify-between mt-5 rounded-2xl p-6">
-                        <p class="text-[#03071299]">Route</p>
-                        <p class="text-[#030712]">Dhaka - Sylhet</p>
+                <div class="text-center flex flex-col justify-center items-center pr-20">
+                    <div>
+                        <img src="images/fare.png" alt="">
+                    </div>
+                    <h4 class="text-[#030712] text-2xl font-bold">550 Taka</h4>
+                    <p class="text-[#03071299] text-xl font-semibold">Per Seat</p>
+                </div>
+            </div>
+
+            <!-- Ticket Selection -->
+
+            <div class="flex justify-between bg-white mt-6 rounded-3xl p-6 ">
+
+                <!-- Seat Selection  -->
+                <div class="">
+                    <h3 class="text-[#030712] font-semibold text-xl">Select your seat</h3>
+                    <div class="border-b-2 border-dashed border-[#03071233] w-full mb-3 mt-3"></div>
+                    <div class="flex justify-between">
+                        <div class="flex gap-2">
+                            <img src="images/seat-gray.png" alt=""> 
+                            <p class="text-[#03071280] ">Available</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <img src="images/seat-green.png" alt=""> 
+                            <p class="text-[#03071280] ">Selected</p>
+                        </div>
+                    </div>
+                    <div class="border-b-2 border-dashed border-[#03071233] w-[609px] mb-3 mt-3"></div>
+
+                    <!-- Seat -->
+                    
+                    <div class="mt-6 grid grid-cols-5 gap-5">
+
+                        <button>A</button>
+                        <button class="seat-btn bg-[#F7F8F8] w-[80px] h-[40px] rounded-xl">A1</button>
+                        <button class="seat-btn bg-[#F7F8F8] w-[80px] h-[40px] rounded-xl">A2</button>
+                        <button class="seat-btn bg-[#F7F8F8] w-[80px] h-[40px] rounded-xl">A3</button>
+                        <button class="seat-btn bg-[#F7F8F8] w-[80px] h-[40px] rounded-xl">A4</button>
+
+                        <button>B</button>
+                        <button class="seat-btn bg-[#F7F8F8] w-[80px] h-[40px] rounded-xl">B1</button>
+                        <button class="seat-btn bg-[#F7F8F8] w-[80px] h-[40px] rounded-xl">B2</button>
+                        <button class="seat-btn bg-[#F7F8F8] w-[80px] h-[40px] rounded-xl">B3</button>
+                        <button class="seat-btn bg-[#F7F8F8] w-[80px] h-[40px] rounded-xl">B4</button>
+
+                        <button>C</button>
+                        <button class="seat-btn bg-[#F7F8F8] w-[80px] h-[40px] rounded-xl">C1</button>
+                        <button class="seat-btn bg-[#F7F8F8] w-[80px] h-[40px] rounded-xl">C2</button>
+                        <button class="seat-btn bg-[#F7F8F8] w-[80px] h-[40px] rounded-xl">C3</button>
+                        <button class="seat-btn bg-[#F7F8F8] w-[80px] h-[40px] rounded-xl">C4</button>
+
                     </div>
                     
-                    <div class="border-b-2 border-dashed border-[#03071233] mx-4 h-full"></div>
+                </div>
 
-                    <div class="flex justify-between rounded-2xl p-6">
-                        <p class="text-[#03071299]">Departure Time</p>
-                        <p class="text-[#030712]">9:00 PM</p>
+                <!-- Payment Section  -->
+                <div class="">
+                    <h3 class="text-[#030712] font-semibold text-xl">Select your seat</h3>
+                    <div class="border-b-2 border-dashed border-[#03071233] w-full mb-3 mt-3"></div>
+                    <div class="bg-[#F7F8F8] rounded-xl p-6">
+                        <div class="flex justify-between">
+                            <p>Seat <span id="selected-seat" class="text-white bg-[#1DD100] rounded-full px-2">0</span></p>
+                            <p>Class</p>
+                            <p>Price</p>
+                        </div>
+                        <div class="border-b-2 border-dashed border-[#03071233] mx-4 w-full h-full mb-3 mt-3"></div>
+            
+                        <div class="bg-white rounded-xl p-5 flex justify-between gap-2">
+                            <input id="coupon-input" type="text" placeholder="Have any coupon">
+                            <button id="apply-btn" class="bg-[#1DD100] text-white rounded-lg px-3 py-2">Apply</button>
+                        </div>
+                        <div class="flex justify-between mt-6">
+                            <h4 class="text-[#030712]">Grand Total</h4>
+                            <p>BDT <span>0</span></p>
+                        </div>
                     </div>
 
-                    <div class="border-b-2 border-dashed border-[#03071233] mx-4 h-full"></div>
+                    <form class="mt-6">
+                        <label class="block font-semibold mb-2" for="passenger-name">
+                            Passenger Name*
+                        </label>
+                        <input class="border rounded-xl w-full py-2 px-3" id="passenger-name" type="text" placeholder="Enter your name" required>
+                        
+                        <label class="block font-semibold mt-4 mb-2" for="phone-number">
+                            Phone Number*
+                        </label>
+                        <input class="border rounded-xl w-full py-2 px-3" id="phone-number" type="text" placeholder="Enter your phone number" required>
 
-                    <div class="px-5 pb-5 flex justify-between mt-4">
-                        <button class="btn bg-[#0307120D] rounded-xl ">Boarding Point - Laxmipur</button>
-                        <button class="btn bg-[#0307120D] rounded-xl">Dropping Point - Bogura</button>
-                        <button class="btn bg-[#0307120D] rounded-xl">Est. Time - 11 Hour</button>
+                        <label class="block font-semibold mt-4 mb-2" for="email">
+                            Email ID*
+                        </label>
+                        <input class="border rounded-xl w-full py-2 px-3" id="email" type="text" placeholder="Enter your email ID" required>
+                    </form>
+
+                    <button class="btn mt-5 bg-[#1DD100] rounded-xl text-white w-full font-extrabold text-xl">Next</button>
+
+                    <div class="flex justify-between mt-5 text-[#03071299] underline text-sm">
+                        <a href="#">Terms and Conditions</a>
+                        <a href="#">Cancellation Policy</a>
                     </div>
+                    
                 </div>
+
+
+
+
             </div>
-            <div class="text-center flex flex-col justify-center items-center pr-20">
-                <div>
-                    <img src="images/fare.png" alt="">
-                </div>
-                <h4 class="text-[#030712] text-2xl font-bold">550 Taka</h4>
-                <p class="text-[#03071299] text-xl font-semibold">Per Seat</p>
-            </div>
+
         </div>
 
-        <!-- Ticket Selection -->
-
     </section>
+    <script src="script.js"></script>
 </body>
+<footer class="mt-20">
+
+</footer>
 </html>
